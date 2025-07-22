@@ -1,1 +1,397 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weixi Lin - Personal Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" data-en="Weixi Lin" data-zh="林炜希">Weixi Lin</div>
+            <ul class="nav-menu">
+                <li><a href="#home" data-en="Home" data-zh="首页">Home</a></li>
+                <li><a href="#about" data-en="About" data-zh="关于">About</a></li>
+                <li><a href="#education" data-en="Education" data-zh="教育">Education</a></li>
+                <li><a href="#skills" data-en="Skills" data-zh="技能">Skills</a></li>
+                <li><a href="#projects" data-en="Projects" data-zh="项目">Projects</a></li>
+                <li><a href="#experience" data-en="Experience" data-zh="经历">Experience</a></li>
+                <li><a href="#contact" data-en="Contact" data-zh="联系">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-en="Weixi Lin" data-zh="林炜希">Weixi Lin</h1>
+                <p class="hero-subtitle" data-en="AI Developer | Master's in Computer Technology" data-zh="AI开发工程师 | 计算机技术硕士">AI Developer | Master's in Computer Technology</p>
+                <p class="hero-description" data-en="Specialized in Artificial Intelligence, Large Language Model applications, and intelligent system design. Experienced in Multi-Agent systems, RAG architecture, vector databases, and generative recommendation systems. Proficient in advanced RecSys frameworks including TIGER, COBRA, LC-REC, LIGER, IDGenRec, and ColaRec. Passionate about leveraging cutting-edge AI technologies to solve complex real-world problems." data-zh="专注于人工智能、大模型应用开发和智能系统设计，具备扎实的技术基础和丰富的项目经验。在Multi-Agent系统、RAG架构、向量数据库和生成式推荐系统等领域有深入研究。精通TIGER、COBRA、LC-REC、LIGER、IDGenRec、ColaRec等先进推荐框架，致力于用前沿AI技术解决现实问题。">
+                    Specialized in Artificial Intelligence, Large Language Model applications, and intelligent system design. Experienced in Multi-Agent systems, RAG architecture, vector databases, and generative recommendation systems. Proficient in advanced RecSys frameworks including TIGER, COBRA, LC-REC, LIGER, IDGenRec, and ColaRec. Passionate about leveraging cutting-edge AI technologies to solve complex real-world problems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary" data-en="View Projects" data-zh="查看项目">View Projects</a>
+                    <a href="#contact" class="btn-secondary" data-en="Contact Me" data-zh="联系我">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="avatar">
+                    <span>W</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Language Switch Section -->
+    <section class="language-switch-section">
+        <div class="container">
+            <div class="language-switch-container">
+                <h3 data-en="Language / 语言" data-zh="Language / 语言">Language / 语言</h3>
+                <div class="language-buttons">
+                    <button class="lang-btn active" id="enBtn" data-lang="en">
+                        <i class="fas fa-globe-americas"></i>
+                        <span>English</span>
+                    </button>
+                    <button class="lang-btn" id="zhBtn" data-lang="zh">
+                        <i class="fas fa-globe-asia"></i>
+                        <span>中文</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="About Me" data-zh="关于我">About Me</h2>
+                <p class="section-subtitle" data-en="INTRODUCTION" data-zh="个人介绍">INTRODUCTION</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-en="Hello, I'm Weixi Lin" data-zh="你好，我是林炜希">Hello, I'm Weixi Lin</h3>
+                    <p data-en="I am a dedicated AI engineer and researcher currently pursuing a Master's degree in Computer Technology at Northwestern Polytechnical University. With a strong foundation in software engineering from Shaanxi Normal University, I specialize in developing innovative AI solutions using large language models, multi-agent systems, and advanced vector databases." data-zh="我是一名专注的AI工程师和研究者，目前在西北工业大学攻读计算机技术硕士学位。拥有陕西师范大学软件工程的扎实基础，专门从事使用大语言模型、多智能体系统和先进向量数据库开发创新AI解决方案。">
+                        I am a dedicated AI engineer and researcher currently pursuing a Master's degree in Computer Technology at Northwestern Polytechnical University. With a strong foundation in software engineering from Shaanxi Normal University, I specialize in developing innovative AI solutions using large language models, multi-agent systems, and advanced vector databases.
+                    </p>
+                    <p data-en="My expertise spans across Python backend development, React frontend applications, and cloud-native architectures using Kubernetes. I have hands-on experience with cutting-edge technologies including LangGraph for agent orchestration, Milvus for vector storage, and RAG implementations for intelligent knowledge retrieval. Additionally, I specialize in generative recommendation systems and advanced frameworks such as TIGER, COBRA, LC-REC, LIGER, IDGenRec, and ColaRec for next-generation personalized recommendations." data-zh="我的专业技能涵盖Python后端开发、React前端应用和使用Kubernetes的云原生架构。我拥有前沿技术的实践经验，包括用于智能体编排的LangGraph、用于向量存储的Milvus，以及用于智能知识检索的RAG实现。此外，我专门研究生成式推荐系统和先进框架，如TIGER、COBRA、LC-REC、LIGER、IDGenRec和ColaRec等新一代个性化推荐技术。">
+                        My expertise spans across Python backend development, React frontend applications, and cloud-native architectures using Kubernetes. I have hands-on experience with cutting-edge technologies including LangGraph for agent orchestration, Milvus for vector storage, and RAG implementations for intelligent knowledge retrieval. Additionally, I specialize in generative recommendation systems and advanced frameworks such as TIGER, COBRA, LC-REC, LIGER, IDGenRec, and ColaRec for next-generation personalized recommendations.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label" data-en="Internships" data-zh="实习经历">Internships</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label" data-en="Awards" data-zh="获奖经历">Awards</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15</div>
+                        <div class="stat-label" data-en="Tech Skills" data-zh="技术技能">Tech Skills</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Education" data-zh="教育经历">Education</h2>
+                <p class="section-subtitle" data-en="ACADEMIC BACKGROUND" data-zh="学术背景">ACADEMIC BACKGROUND</p>
+            </div>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025.09 - 2028.06</div>
+                        <h3 data-en="Northwestern Polytechnical University" data-zh="西北工业大学">Northwestern Polytechnical University</h3>
+                        <p class="degree" data-en="Master of Computer Technology" data-zh="计算机技术（硕士）">Master of Computer Technology</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021.09 - 2025.06</div>
+                        <h3 data-en="Shaanxi Normal University" data-zh="陕西师范大学">Shaanxi Normal University</h3>
+                        <p class="degree" data-en="Bachelor of Software Engineering" data-zh="软件工程专业（学士）">Bachelor of Software Engineering</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Awards -->
+            <div class="awards">
+                <h3 data-en="Awards & Honors" data-zh="获奖荣誉">Awards & Honors</h3>
+                <div class="awards-grid">
+                    <div class="award-card">
+                        <i class="fas fa-trophy"></i>
+                        <h4 data-en="National Scholarship" data-zh="国家奖学金">National Scholarship</h4>
+                    </div>
+                    <div class="award-card">
+                        <i class="fas fa-medal"></i>
+                        <h4 data-en="National Inspirational Scholarship" data-zh="国家励志奖学金">National Inspirational Scholarship</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Professional Skills" data-zh="专业技能">Professional Skills</h2>
+                <p class="section-subtitle" data-en="TECHNICAL EXPERTISE" data-zh="技术专长">TECHNICAL EXPERTISE</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-brain"></i>
+                        <h3 data-en="AI & Large Models" data-zh="AI & 大模型">AI & Large Models</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li data-en="LLM-driven Multi-Agent System Design" data-zh="LLM驱动的Multi-Agent系统设计">LLM-driven Multi-Agent System Design</li>
+                        <li data-en="RAG Architecture & Knowledge Indexing" data-zh="RAG架构与知识索引系统">RAG Architecture & Knowledge Indexing</li>
+                        <li data-en="Generative Recommendation Systems" data-zh="生成式推荐系统">Generative Recommendation Systems</li>
+                        <li data-en="Advanced RecSys Frameworks (TIGER, COBRA, LC-REC)" data-zh="先进推荐框架 (TIGER, COBRA, LC-REC)">Advanced RecSys Frameworks (TIGER, COBRA, LC-REC)</li>
+                        <li data-en="Next-Gen Recommendation Models (LIGER, IDGenRec, ColaRec)" data-zh="新一代推荐模型 (LIGER, IDGenRec, ColaRec)">Next-Gen Recommendation Models (LIGER, IDGenRec, ColaRec)</li>
+                        <li data-en="Agentic AI Technology Research & Application" data-zh="Agentic AI技术研究与应用">Agentic AI Technology Research & Application</li>
+                        <li data-en="LangGraph Complex AI Workflow Construction" data-zh="LangGraph构建复杂AI工作流">LangGraph Complex AI Workflow Construction</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-server"></i>
+                        <h3 data-en="Backend Development" data-zh="后端开发">Backend Development</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li data-en="Python & FastAPI/Flask" data-zh="Python & FastAPI/Flask">Python & FastAPI/Flask</li>
+                        <li data-en="Kubernetes & Microservices Architecture" data-zh="Kubernetes & 微服务架构">Kubernetes & Microservices Architecture</li>
+                        <li data-en="Milvus Vector Database Optimization" data-zh="Milvus向量数据库优化">Milvus Vector Database Optimization</li>
+                        <li data-en="Redis Caching & Data Processing" data-zh="Redis缓存与数据处理">Redis Caching & Data Processing</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3 data-en="Frontend Development" data-zh="前端开发">Frontend Development</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li data-en="React & Modern Frontend Frameworks" data-zh="React & 现代前端框架">React & Modern Frontend Frameworks</li>
+                        <li data-en="Responsive Design & User Experience" data-zh="响应式设计与用户体验">Responsive Design & User Experience</li>
+                        <li data-en="Frontend-Backend Integration & API Design" data-zh="前后端集成与API设计">Frontend-Backend Integration & API Design</li>
+                        <li data-en="Modern Web Technology Stack" data-zh="现代Web技术栈">Modern Web Technology Stack</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3 data-en="Project Management" data-zh="项目管理">Project Management</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li data-en="LLM Application Lifecycle Management" data-zh="大模型应用全生命周期管理">LLM Application Lifecycle Management</li>
+                        <li data-en="System Architecture Design & Optimization" data-zh="系统架构设计与优化">System Architecture Design & Optimization</li>
+                        <li data-en="Team Collaboration & Code Review" data-zh="团队协作与代码review">Team Collaboration & Code Review</li>
+                        <li data-en="Agile Development & Continuous Integration" data-zh="敏捷开发与持续集成">Agile Development & Continuous Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Project Experience" data-zh="项目经验">Project Experience</h2>
+                <p class="section-subtitle" data-en="FEATURED WORKS" data-zh="精选作品">FEATURED WORKS</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-en="VectorMind - Intelligent Knowledge Base System" data-zh="VectorMind - 智能知识库系统">VectorMind - Intelligent Knowledge Base System</h3>
+                        <p class="project-type" data-en="AI Application Development" data-zh="AI应用开发">AI Application Development</p>
+                        <p class="project-description" data-en="An intelligent knowledge base system based on RAG technology, supporting efficient processing and intelligent retrieval of large-scale documents, significantly improving knowledge retrieval accuracy through vectorized storage and semantic search." data-zh="基于RAG技术的智能知识库系统，支持大规模文档的高效处理和智能检索，通过向量化存储和语义检索显著提升知识检索精准度。">
+                            An intelligent knowledge base system based on RAG technology, supporting efficient processing and intelligent retrieval of large-scale documents, significantly improving knowledge retrieval accuracy through vectorized storage and semantic search.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">Milvus</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-highlights">
+                            <p data-en="Response time controlled within 200ms" data-zh="响应时间控制在200ms以内"><i class="fas fa-check"></i> Response time controlled within 200ms</p>
+                            <p data-en="Support for large-scale document processing" data-zh="支持大规模文档处理"><i class="fas fa-check"></i> Support for large-scale document processing</p>
+                            <p data-en="Significantly improved retrieval accuracy" data-zh="显著提升检索精准度"><i class="fas fa-check"></i> Significantly improved retrieval accuracy</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-en="NexusFlow - Intelligent Agent Orchestration System" data-zh="NexusFlow - 智能代理编排系统">NexusFlow - Intelligent Agent Orchestration System</h3>
+                        <p class="project-type" data-en="AI Workflow" data-zh="AI工作流">AI Workflow</p>
+                        <p class="project-description" data-en="An intelligent agent system based on LangGraph, implementing configurable and debuggable AI agent workflows, supporting visual debugging and real-time monitoring of complex workflows." data-zh="基于LangGraph的智能代理系统，实现可配置、可调试的AI代理工作流，支持复杂工作流的可视化调试和实时监控。">
+                            An intelligent agent system based on LangGraph, implementing configurable and debuggable AI agent workflows, supporting visual debugging and real-time monitoring of complex workflows.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LangGraph</span>
+                            <span class="tech-tag">LangSmith</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Agent</span>
+                        </div>
+                        <div class="project-highlights">
+                            <p data-en="Scalable intelligent agent framework" data-zh="可扩展的智能代理框架"><i class="fas fa-check"></i> Scalable intelligent agent framework</p>
+                            <p data-en="Support for dynamic configuration and hot reload" data-zh="支持动态配置和热重载"><i class="fas fa-check"></i> Support for dynamic configuration and hot reload</p>
+                            <p data-en="Real-time monitoring and debugging functionality" data-zh="实时监控和调试功能"><i class="fas fa-check"></i> Real-time monitoring and debugging functionality</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Internship Experience" data-zh="实习经历">Internship Experience</h2>
+                <p class="section-subtitle" data-en="PROFESSIONAL JOURNEY" data-zh="职业历程">PROFESSIONAL JOURNEY</p>
+            </div>
+            <div class="experience-timeline">
+                <div class="exp-item">
+                    <div class="exp-date">2024.06 - 2024.09</div>
+                    <div class="exp-content">
+                        <h3 data-en="ZhongAn Online P&C Insurance Co., Ltd." data-zh="众安在线财产保险股份有限公司">ZhongAn Online P&C Insurance Co., Ltd.</h3>
+                        <p class="exp-position" data-en="AIGC Developer" data-zh="AIGC开发">AIGC Developer</p>
+                        <ul class="exp-responsibilities">
+                            <li data-en="Participated in the development and optimization of AIGC-related products" data-zh="参与AIGC相关产品的开发和优化">Participated in the development and optimization of AIGC-related products</li>
+                            <li data-en="Responsible for integration and deployment of large language model applications" data-zh="负责大模型应用的集成和部署">Responsible for integration and deployment of large language model applications</li>
+                            <li data-en="Assisted the team in completing AI-driven insurance product innovation" data-zh="协助团队完成AI驱动的保险产品创新">Assisted the team in completing AI-driven insurance product innovation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="exp-item">
+                    <div class="exp-date">2024.10 - 2025.01</div>
+                    <div class="exp-content">
+                        <h3 data-en="Huawei MindSpore Open Source Internship" data-zh="华为Mindspore开源实习">Huawei MindSpore Open Source Internship</h3>
+                        <p class="exp-position" data-en="Open Source Contributor" data-zh="开源贡献者">Open Source Contributor</p>
+                        <ul class="exp-responsibilities">
+                            <li data-en="Participated in the development and maintenance of MindSpore open source framework" data-zh="参与MindSpore开源框架的开发维护">Participated in the development and maintenance of MindSpore open source framework</li>
+                            <li data-en="Contributed code optimization and bug fixes" data-zh="贡献代码优化和bug修复">Contributed code optimization and bug fixes</li>
+                            <li data-en="Participated in community technical discussions and documentation improvement" data-zh="参与社区技术讨论和文档完善">Participated in community technical discussions and documentation improvement</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="exp-item">
+                    <div class="exp-date">2025.01 - 2025.03</div>
+                    <div class="exp-content">
+                        <h3 data-en="Xi'an Film AI Lab" data-zh="西影AI lab">Xi'an Film AI Lab</h3>
+                        <p class="exp-position" data-en="Agent & RAG Algorithm Intern" data-zh="Agent、RAG算法实习">Agent & RAG Algorithm Intern</p>
+                        <ul class="exp-responsibilities">
+                            <li data-en="In-depth research and development of intelligent agent algorithms" data-zh="深入研究和开发智能代理算法">In-depth research and development of intelligent agent algorithms</li>
+                            <li data-en="Optimized RAG system architecture" data-zh="优化RAG系统架构">Optimized RAG system architecture</li>
+                            <li data-en="Participated in AI technology applications in the film industry" data-zh="参与AI技术在影视行业的应用">Participated in AI technology applications in the film industry</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Contact Me" data-zh="联系我">Contact Me</h2>
+                <p class="section-subtitle" data-en="GET IN TOUCH" data-zh="保持联系">GET IN TOUCH</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-en="Phone" data-zh="电话">Phone</h4>
+                            <p>13022943007</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-en="Email" data-zh="邮箱">Email</h4>
+                            <p>13022943007@163.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-zhihu"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-en="Zhihu" data-zh="知乎">Zhihu</h4>
+                            <p data-en="Tech Blog" data-zh="技术博客">Tech Blog</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" data-placeholder-en="Your Name" data-placeholder-zh="您的姓名" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" data-placeholder-en="Your Email" data-placeholder-zh="您的邮箱" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" data-placeholder-en="Your Message" data-placeholder-zh="您的消息" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" data-en="Send Message" data-zh="发送消息">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-en="&copy; 2025 Weixi Lin. All rights reserved." data-zh="&copy; 2025 林炜希. 保留所有权利.">&copy; 2025 Weixi Lin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
