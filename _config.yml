@@ -8,7 +8,7 @@
 # Site Settings
 title                    : "林炜希 - 个人主页"
 description              : "西北工业大学计算机技术专业在读硕士，专注于大模型优化与RAG系统开发"
-repository               : "weixilin/weixilin.github.io"
+repository               : "Pinoeer-kingxi/weixilin.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "weixilin"
+  github           : "Pinoeer-kingxi"
   google_plus      :
   keybase          :
   instagram        :
