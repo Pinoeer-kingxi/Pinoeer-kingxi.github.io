@@ -107,3 +107,40 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+
+// Language switcher styles
+.lang-switcher-btn {
+    background: transparent;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: $text-color;
+    transition: $global-transition;
+    margin-left: 0.5em;
+    font-family: $global-font-family;
+    
+    &:hover {
+        background-color: $lighter-gray;
+        border-color: $gray;
+    }
+    
+    &:focus {
+        outline: 2px solid $link-color;
+        outline-offset: 2px;
+    }
+    
+    .lang-text {
+        display: inline-block;
+    }
+}
+
+// Language content transitions
+.lang-content {
+    transition: opacity 0.3s ease;
+    
+    &[style*="display: none"] {
+        display: none !important;
+    }
+}

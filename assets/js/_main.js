@@ -95,4 +95,50 @@ $(document).ready(function(){
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
 
+  // Language switching functionality
+  var currentLang = localStorage.getItem('preferred-language') || 'en';
+  
+  function switchLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('preferred-language', lang);
+    
+    // Switch all content blocks
+    $('[data-lang]').each(function() {
+      var $this = $(this);
+      if ($this.attr('data-lang') === lang) {
+        $this.show();
+      } else {
+        $this.hide();
+      }
+    });
+    
+    // Switch language switcher button text
+    $('.lang-switcher-btn .lang-text').each(function() {
+      var $this = $(this);
+      if ($this.attr('data-lang') === lang) {
+        $this.show();
+      } else {
+        $this.hide();
+      }
+    });
+    
+    // Switch navigation links
+    $('a[data-lang-en], a[data-lang-zh]').each(function() {
+      var $this = $(this);
+      var text = lang === 'en' ? $this.attr('data-lang-en') : $this.attr('data-lang-zh');
+      if (text) {
+        $this.text(text);
+      }
+    });
+  }
+  
+  // Initialize language on page load
+  switchLanguage(currentLang);
+  
+  // Handle language switcher button click
+  $('#lang-switcher').on('click', function() {
+    var newLang = currentLang === 'en' ? 'zh' : 'en';
+    switchLanguage(newLang);
+  });
+
 });

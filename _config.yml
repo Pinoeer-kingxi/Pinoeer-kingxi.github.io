@@ -6,8 +6,10 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "林炜希 - 个人主页"
-description              : "西北工业大学计算机技术专业在读硕士，专注于大模型优化与RAG系统开发"
+title                    : "Weixi Lin - Personal Homepage"
+title_zh                 : "林炜希 - 个人主页"
+description              : "Master's student in Computer Technology at Northwestern Polytechnical University, focusing on large model optimization and RAG system development"
+description_zh           : "西北工业大学计算机技术专业在读硕士，专注于大模型优化与RAG系统开发"
 repository               : "Pinoeer-kingxi/Pinoeer-kingxi.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -22,13 +24,17 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "林炜希"
+  name_en          : "Weixi Lin"
   avatar           : "images/weixi.jpg"
-  bio              : "西北工业大学计算机技术专业在读硕士"
-  location         : "西安, 中国"
-  employer         : "西北工业大学"
+  bio              : "Master's student in Computer Technology at Northwestern Polytechnical University"
+  bio_zh           : "西北工业大学计算机技术专业在读硕士"
+  location         : "Xi'an, China"
+  location_zh      : "西安, 中国"
+  employer         : "Northwestern Polytechnical University"
+  employer_zh      : "西北工业大学"
   pubmed           : 
   googlescholar    : 
-  email            : "1010443315@qq.com"
+  email            : "weixilin@mail.nwpu.edu.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
