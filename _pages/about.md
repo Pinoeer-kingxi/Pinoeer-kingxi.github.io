@@ -20,13 +20,13 @@ redirect_from:
 {% capture intro_en %}
 I am Weixi Lin, currently a Master's student in Computer Technology at Northwestern Polytechnical University. My research interests primarily focus on **large model optimization**, **RAG (Retrieval-Augmented Generation) systems**, and **AI inference acceleration**.
 
-In academic and competition contexts, I actively participate in various AI innovation competitions, focusing on addressing performance bottlenecks of large models in practical applications. I have accumulated substantial practical experience, particularly in MoE (Mixture of Experts) model optimization and end-to-end RAG system design. Notably, in the MOE competition, the baseline score is 100 points.
+In academic and competition contexts, I actively participate in various AI innovation competitions, focusing on addressing performance bottlenecks of large models in practical applications. I have accumulated substantial practical experience, particularly in MoE (Mixture of Experts) model optimization and end-to-end RAG system design. Notably, in the MOE competition, I achieved a total score of 353.7 points (baseline 100), representing a 253.7% improvement.
 {% endcapture %}
 
 {% capture intro_zh %}
 我是林炜希，目前是西北工业大学计算机技术专业的在读硕士研究生。我的研究兴趣主要集中在**大模型优化**、**RAG（检索增强生成）系统**和**AI推理加速**等领域。
 
-在学术和竞赛方面，我积极参与各类AI创新大赛，专注于解决大模型在实际应用中的性能瓶颈问题，特别是在MoE（Mixture of Experts）模型优化和全链路RAG系统设计方面积累了丰富的实践经验。值得一提的是，MOE比赛的基线是100分。
+在学术和竞赛方面，我积极参与各类AI创新大赛，专注于解决大模型在实际应用中的性能瓶颈问题，特别是在MoE（Mixture of Experts）模型优化和全链路RAG系统设计方面积累了丰富的实践经验。在MOE比赛中，我取得了总分353.7分（基线100分）的成绩，提升了253.7%。
 {% endcapture %}
 
 <div data-lang="en" class="lang-content">
@@ -40,14 +40,14 @@ In academic and competition contexts, I actively participate in various AI innov
 {% capture news_en %}
 # 🔥 News
 - *2025.10*: &nbsp;🎉🎉 End-to-end RAG solution design project ongoing, achieving 91% Hit Rate and 85%+ Factuality Score
-- *2025.11*: &nbsp;🎉🎉 Ascend AI Innovation Competition - MindSpore Large Model Optimization project completed, Prefill performance improved by 266%, total score 353.7 (baseline 220)
+- *2025.11*: &nbsp;🎉🎉 Ascend AI Innovation Competition - MindSpore Large Model Optimization project completed, Prefill performance improved by 266%, total score 353.7 (baseline 100, improvement of 253.7%)
 - *2025.09*: &nbsp;🎉🎉 Won Silver Medal in MindSpore Model Development Challenge S1-MOE Track
 {% endcapture %}
 
 {% capture news_zh %}
 # 🔥 News
 - *2025.10*: &nbsp;🎉🎉 全链路RAG方案设计项目持续进行中，实现了91%的Hit Rate和85%+的Factuality Score
-- *2025.11*: &nbsp;🎉🎉 昇腾AI创新大赛 - MindSpore大模型优化项目完成，Prefill性能提升266%，总分353.7（基线220）
+- *2025.11*: &nbsp;🎉🎉 昇腾AI创新大赛 - MindSpore大模型优化项目完成，Prefill性能提升266%，总分353.7（基线100，提升253.7%）
 - *2025.09*: &nbsp;🎉🎉 获得昇思模型开发挑战赛 S1-MOE赛道银牌
 {% endcapture %}
 
@@ -157,7 +157,7 @@ Currently, I have no published papers. Related work is in progress.
 - **Prefill Optimization**: Proposed Pad-BMM-Gather algorithm, utilizing tensor_scatter_update and batch matrix multiplication (ops.bmm) to replace native Python loops, achieving complete vectorization of expert computation, Prefill performance improved by 266%
 - **Decode Optimization**: Designed dynamic weight caching mechanism, reorganizing discrete expert weights into continuous memory, optimizing memory access locality; combined with float32 mixed precision strategy, solved the precision overflow problem in parallel computation
 
-**Results**: Final total score 353.7 (baseline 220), achieving multiple-fold improvement in inference speed while reducing peak memory by 17%.
+**Results**: Final total score 353.7 (baseline 100, improvement of 253.7%), achieving multiple-fold improvement in inference speed while reducing peak memory by 17%.
 {% endcapture %}
 
 {% capture projects_zh %}
@@ -190,7 +190,7 @@ Currently, I have no published papers. Related work is in progress.
 - **Prefill 优化**: 提出 Pad-BMM-Gather 算法，利用 tensor_scatter_update 和批量矩阵乘法 (ops.bmm) 替代原生 Python 循环，实现专家计算的完全向量化，Prefill 性能提升 266%
 - **Decode 优化**: 设计动态权重缓存机制，将离散的专家权重重组为连续内存，优化显存访问局部性；配合 float32 混合精度策略，解决了并行计算的精度溢出问题
 
-**结果**: 最终总分 353.7 (基线 220)，在降低 17% 显存峰值的同时，实现了推理速度的倍数级跃升。
+**结果**: 最终总分 353.7 (基线 100，提升 253.7%)，在降低 17% 显存峰值的同时，实现了推理速度的倍数级跃升。
 {% endcapture %}
 
 <div data-lang="en" class="lang-content">
